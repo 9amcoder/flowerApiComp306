@@ -9,6 +9,7 @@ namespace flowerApiFinal.Models
 {
     public class OrderMaster
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Key]
         public long OrderMasterId { get; set; }
 

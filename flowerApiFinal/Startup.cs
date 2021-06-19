@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using flowerApiFinal.Models;
-
+using Microsoft.Data.SqlClient;
 
 namespace flowerApiFinal
 {
@@ -29,6 +29,8 @@ namespace flowerApiFinal
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
 
             services.AddCors(options =>
             {
@@ -53,6 +55,12 @@ namespace flowerApiFinal
 
             services.AddDbContext<FlowerDbContext>(options =>
            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            //var builder = new SqlConnectionStringBuilder(Configuration.GetConnectionString("Connection2CityInfoDB"));
+            //builder.UserID = Configuration["DbUser"];
+            //builder.Password = Configuration["DbPassword"];
+            //var connection = builder.ConnectionString;
+            //services.AddDbContext<FlowerDbContext>(options => options.UseSqlServer(connection));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

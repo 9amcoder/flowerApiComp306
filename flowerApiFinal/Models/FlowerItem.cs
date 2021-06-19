@@ -9,6 +9,7 @@ namespace flowerApiFinal.Models
 {
     public class FlowerItem
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Key]
         public int FlowerItemId { get; set; }
 

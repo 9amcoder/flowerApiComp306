@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using flowerApiFinal.Models;
 
 namespace flowerApiFinal.Migrations
 {
     [DbContext(typeof(FlowerDbContext))]
-    partial class FlowerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210618063840_initial2")]
+    partial class initial2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,7 +23,9 @@ namespace flowerApiFinal.Migrations
             modelBuilder.Entity("flowerApiFinal.Models.Customer", b =>
                 {
                     b.Property<int>("CustomerID")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CustomerName")
                         .HasColumnType("nvarchar(100)");
@@ -34,7 +38,9 @@ namespace flowerApiFinal.Migrations
             modelBuilder.Entity("flowerApiFinal.Models.FlowerItem", b =>
                 {
                     b.Property<int>("FlowerItemId")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("FlowerItemName")
                         .HasColumnType("nvarchar(100)");
@@ -50,7 +56,9 @@ namespace flowerApiFinal.Migrations
             modelBuilder.Entity("flowerApiFinal.Models.OrderDetail", b =>
                 {
                     b.Property<long>("OrderDetailId")
-                        .HasColumnType("bigint");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("FlowerItemId")
                         .HasColumnType("int");
@@ -76,7 +84,9 @@ namespace flowerApiFinal.Migrations
             modelBuilder.Entity("flowerApiFinal.Models.OrderMaster", b =>
                 {
                     b.Property<long>("OrderMasterId")
-                        .HasColumnType("bigint");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");

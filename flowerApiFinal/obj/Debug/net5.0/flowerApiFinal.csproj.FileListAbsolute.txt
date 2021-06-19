@@ -7,6 +7,10 @@ D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\flowerApiFinal.dll
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\ref\flowerApiFinal.dll
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\flowerApiFinal.pdb
+D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\Amazon.Extensions.Configuration.SystemsManager.dll
+D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\AWSSDK.Core.dll
+D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\AWSSDK.Extensions.NETCore.Setup.dll
+D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\AWSSDK.SimpleSystemsManagement.dll
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\Humanizer.dll
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
@@ -155,3 +159,4 @@ D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\obj\
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\obj\Debug\net5.0\ref\flowerApiFinal.dll
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\obj\Debug\net5.0\flowerApiFinal.pdb
 D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\obj\Debug\net5.0\flowerApiFinal.genruntimeconfig.cache
+D:\Centennial\summer2021\comp306\finalProject\flowerApiFinal\flowerApiFinal\obj\Debug\net5.0\flowerApiFinal.csproj.AssemblyReference.cache
